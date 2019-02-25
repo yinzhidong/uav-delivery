@@ -1,20 +1,11 @@
 package com.echo.uav;
 
-import org.apache.log4j.Logger;
-import org.omg.CORBA.OBJ_ADAPTER;
-import sun.management.snmp.jvminstr.JvmThreadInstanceEntryImpl;
-
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @Description:
- * @Author Run.Xu
- * @Date Created in 13:01 2019/2/21
- */
+import org.apache.log4j.Logger;
+
 public class CreateTaskUav implements Runnable{
     final Map<String,Object> taskIds ;
     final Logger    logger  =  Logger.getLogger(CreateTaskUav. class );
